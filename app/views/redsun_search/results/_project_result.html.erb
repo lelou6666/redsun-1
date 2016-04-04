@@ -1,0 +1,8 @@
+<h5><%= t "redsun.project" %></small></h5>
+<h3><%= link_to highlighter_for(:name, hit, record), record %></h3>
+<h5>
+  <%= authoring(record.created_on, nil )%>
+</h5>
+<p>
+  <%= sanitize highlighter_for(:description, hit, record), tags: %w(span b strong a), attributes: %w(class id style href target) %>
+</p>

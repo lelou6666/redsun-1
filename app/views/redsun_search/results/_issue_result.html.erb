@@ -1,0 +1,11 @@
+<h5><%= t "field_issue" %> #<%= highlighter_for(:id, hit, record) %> in <%= link_to record.try(:project).try(:name), record.try(:project) %></small></h5>
+<h3><%= link_to highlighter_for(:subject, hit, record), record %></h3>
+<% if record.created_on && record.author %>
+  <h5>
+    <%= avatar(record.author, :size => "16") %><%= authoring(record.created_on, record.author )%>
+  </h5>
+<% end %>
+<p>
+  <%= sanitize highlighter_for(:description, hit, record), tags: %w(span b strong a), attributes: %w(class id style href target) %>
+  <%= sanitize highlighter_for(:comments, hit, record), tags: %w(span b strong a), attributes: %w(class id style href target) %>
+</p>

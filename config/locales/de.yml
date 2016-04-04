@@ -1,0 +1,61 @@
+de:
+  will_paginate:
+    next_label: "Weiter →"
+    page_entries_info:
+      multi_page: "Zeige %{from} - %{to} Ergebnisse von insgesamt %{count}"
+      multi_page_html: "Zeige <b>%{from}&nbsp;-&nbsp;%{to}</b> von <b>%{count}</b> insgesamt"
+      single_page:
+        one: "Zeige 1 Ergebnis"
+        other: "Zeige alle %{count} Ergebnisse"
+        zero: "Kein(e) Ergebnis gefunden"
+      single_page_html:
+        one: "Zeige <b>1</b> Ergebnis"
+        other: "Zeige <b>alle&nbsp;%{count}</b> Ergebnisse"
+        zero: "Kein(e) Ergebnis gefunden"
+    page_gap: '&hellip;'
+    previous_label: "← Vorige"
+  redsun:
+    inactive: "Deaktiviert"
+    settings:
+      enable_solr_search_field: "Solr Suche aktivieren"
+    journal: "Kommentar"
+    issue: "Ticket"
+    wiki_page: "Wikiseite"
+    project: "Projekt"
+    search_button: "Suchen!"
+    header: "Solr-Suche"
+    searchstring: "Suchbegriffe"
+    order: Sortierung
+    no_results: "Es konnten leider keine Suchergebnisse gefunden werden."
+    reset: "Zurücksetzen"
+    hints: "Benutze * als Platzhalter, um mehr Suchergebnisse zu erhalten."
+    facets:
+      values:
+        "false": "Nein"
+        "true": "Ja"
+        journal: "Kommentar"
+        issue: "Ticket"
+        wikipage: "Wikiseite"
+        project: "Projekt"
+    facet:
+      reset_object_facet: "Alle Objekte anzeigen"
+      remove: "- entfernen"
+      created_on: "Erstellungszeitraum"
+      updated_on: "Aktualisierungdatum"
+      date_range_rows:
+        last_7_days: "innerhalb der letzten 7 Tage"
+        last_month: "innerhalb der letzten 30 Tage"
+        last_3_months: "innerhalb der letzten 3 Monate"
+        last_6_months: "innerhalb der letzten 6 Monate"
+        older: "Vor mehr als einem Jahr"
+      author_id: "Autor"
+      status_id: "Status"
+      tracker_id: "Tracker"
+      priority_id: "Priorität"
+      assigned_to_id: "Zugewiesen an"
+      active: "Aktiv?"
+      class_name: "Objekt-Typ"
+      project_name: "Projekt"
+    connection_refused_header: "Redsun: Solr Server ist nicht erreichbar"
+    connection_refused_admin_message: "Bitte deaktivieren Sie in den Redsun-Plugin Einstellungen die Solr-Suche solange das Problem nicht gelöst ist."
+    connection_refused_user_message: "Please contact your admin."
